@@ -15,8 +15,8 @@
     }
   ],
   "require": {
-    "yireo/magento2-example-dealers": "*",
-    "magento/framework": "*",
+    "yireo/magento2-example-dealers": "@dev",
+    "magento/framework": "^102.0",
     "php": ">=7.0.0"
   },
   "require-dev": {

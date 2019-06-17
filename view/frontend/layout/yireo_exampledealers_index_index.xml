@@ -5,6 +5,7 @@
             <block name="dealer_overview" template="Yireo_ExampleDealersStorefront::dealer/overview.phtml">
                 <arguments>
                     <argument name="dealers_view_model" xsi:type="object">Yireo\ExampleDealersStorefront\ViewModel\Dealers</argument>
+                    <argument name="customer_view_model" xsi:type="object">Yireo\ExampleDealersStorefront\ViewModel\Customer</argument>
                 </arguments>
             </block>
         </referenceContainer>
