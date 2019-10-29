@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "magento/framework": "^102.0",
+    "magento/framework": "^101.0|^102.0",
     "php": ">=7.0.0"
   },
   "require-dev": {
