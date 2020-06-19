@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /** @var \Yireo\ExampleDealersStorefront\ViewModel\Dealers $dealersViewModel */
@@ -6,22 +7,34 @@ $dealersViewModel = $block->getDealersViewModel();
 
 $dealers = $dealersViewModel->getDealers();
 ?>
-<h1>Example dealers</h1>
+<h1 class="page-title">
+    <span class="base" data-ui-id="page-title-wrapper">Example Dealers Overview</span>
+</h1>
+
 <?php if ($dealers) : ?>
-<table>
-    <thead>
-    <th>ID</th>
-    <th>Name</th>
-    </thead>
-    <tbody>
-    <?php foreach($dealers as $dealer): ?>
-    <tr>
-        <td><?= $dealer->getId() ?></td>
-        <td><?= $dealer->getName() ?></td>
-    </tr>
-    <?php endforeach; ?>
-    </tbody>
-</table>
+    <div class="table-wrapper">
+        <table class="data table recent">
+            <caption class="table-caption">Listing of Dealers</caption>
+            <thead>
+            <tr>
+                <th scope="col" class="col id">ID</th>
+                <th scope="col" class="col date">Name</th>
+                <th scope="col" class="col shipping">Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($dealers as $dealer): ?>
+                <tr>
+                    <td class="col"><?= $dealer->getId() ?></td>
+                    <td class="col"><?= $dealer->getName() ?></td>
+                    <td class="col"><?= $dealer->getAddress() ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
 <?php else: ?>
-No dealers found
+    No dealers found
 <?php endif; ?>
+
+
