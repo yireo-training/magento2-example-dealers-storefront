@@ -1,33 +1,33 @@
 {
-  "name": "yireo-training/magento2-example-dealers-storefront",
-  "type": "magento2-module",
-  "version": "0.0.1",
-  "license": "OSL-3.0",
-  "description": "Magento 2 module adding a storefront to the Yireo_ExampleDealers module",
-  "keywords": [
-    "composer-installer",
-    "magento"
-  ],
-  "authors": [
-    {
-      "name": "Jisse Reitsma (Yireo)",
-      "email": "jisse@yireo.com"
-    }
-  ],
-  "require": {
-    "magento/framework": "^101.0|^102.0",
-    "php": ">=7.0.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "*",
-    "composer/composer": "*@dev"
-  },
-  "autoload": {
-    "psr-4": {
-      "Yireo\\ExampleDealersStorefront\\": ""
+    "name": "yireo-training/magento2-example-dealers-storefront",
+    "type": "magento2-module",
+    "version": "0.0.1",
+    "license": "OSL-3.0",
+    "description": "Magento 2 module adding a storefront to the Yireo_ExampleDealers module",
+    "keywords": [
+        "composer-installer",
+        "magento"
+    ],
+    "authors": [
+        {
+            "name": "Jisse Reitsma (Yireo)",
+            "email": "jisse@yireo.com"
+        }
+    ],
+    "require": {
+        "magento/framework": "^101.0|^102.0|^103.0",
+        "php": ">=7.3.0"
     },
-    "files": [
-      "registration.php"
-    ]
-  }
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "composer/composer": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yireo\\ExampleDealersStorefront\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
 }
